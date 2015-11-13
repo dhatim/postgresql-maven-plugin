@@ -3,7 +3,7 @@
 
     <groupId>com.github.adrianboimvaser</groupId>
     <artifactId>postgresql-maven-plugin</artifactId>
-    <version>0.3-SNAPSHOT</version>
+    <version>0.7-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
 
     <name>PostgreSQL Maven Plugin</name>
