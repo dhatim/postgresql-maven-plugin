@@ -46,7 +46,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <postgresql-dist.version>9.4.5-3-dhatim</postgresql-dist.version>
+        <postgresql-dist.version>9.2.4</postgresql-dist.version>
     </properties>
 
     <dependencies>
