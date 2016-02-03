@@ -27,6 +27,12 @@ public class InitdbMojo extends PgsqlMojo {
     @Parameter
     protected String locale;
 
+    @Parameter
+    protected String lc_ctype;
+
+    @Parameter
+    protected String lc_collate;
+
     /** The {@code --data-checksums} option was added in PostgreSQL 9.3. Will be used if present and not {@code false}. */
     @Parameter(alias = "data-checksums", property = "data-checksums", defaultValue = "false")
     protected boolean dataChecksums;
@@ -87,6 +93,16 @@ public class InitdbMojo extends PgsqlMojo {
         if (locale != null) {
             cmd.add("--locale");
             cmd.add(locale);
+        }
+        
+        if (lc_ctype != null) {
+            cmd.add("--lc-ctype");
+            cmd.add(lc_ctype);
+        }
+
+        if (lc_collate != null) {
+            cmd.add("--lc-collate");
+            cmd.add(lc_collate);
         }
 
         if (dataChecksums) {
